@@ -266,3 +266,54 @@ a:link{
     color: var(--lightPrimary);
     font-weight: bold;
 }
+
+
+.section4{
+    background-color: var(--backgroundHeader);
+}
+
+
+.title-pay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
+    .title-pay p{
+    max-width: 700px;
+    text-align: center;
+    }
+    
+    .pay{
+    display: flex;
+    gap: 20px;
+    padding: 100px 0 20px 100px;
+    border-bottom: 1px solid grey ;
+    }
+    
+    .pay-form{
+    display: flex;
+    gap: 20px;
+    }
+    
+    .pay-form-img{
+    width: 200px;
+    height: 201px;
+    
+    }
+    
+    .pay-form-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+    
+    .pay-form-info{
+    max-width: 300px;
+    }
+    
+    .pay-form-info h3{
+    margin: 0 0 10px 0;
+    }
+    
+    
