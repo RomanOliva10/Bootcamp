@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;700&display=swap%27');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Bitter';
+}
+
+
+:root{
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+
+nav {
+    background-color: white;
+    font-size: 0.8rem;
+    height: 80px;
+    width: 100vw;
+    line-height: 40px;
+    position: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 60px;
+    list-style: none;
+}
+
+.logo{
+    height: 20px;
+    width: 120px;
+    background-image: url(images/logo-bookmark.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+    padding:0px 30px;
+}
+
+li a {
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+
+}
+
+li a:hover {
+    color: var(--Soft-Red);
+}
+
+.login{
+    border: solid var(--Soft-Red) 2px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--Soft-Red);
+}
+
+.login:hover{
+    color: var(--Soft-Red);
+    border: solid var(--Soft-Red) 2px;
+    background-color: white;
+}
+
+
+.section1{
+    display: flex;
+    padding: 200px 0 0 0;
+}
+
+.section1 .info{
+    width: 35%;
+    margin-left: 50px;
+}
+
+.botones{
+    margin-top: 50px;
+}
+
+.btn{
+    color: white;
+    text-decoration:none;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: var(--Soft-Blue);
+    padding: 1rem 1rem;
+    border-radius: 5px;
+}
+
+.btn2{
+    color: var(--Very-Dark-Blue);
+    font-weight: bold;
+    text-decoration:none;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    background-color: rgb(246, 244, 244);
+}
+
+.btn:hover{
+    background-color: white;
+    border: solid var(--Soft-Blue) 2px;
+    color: var(--Soft-Blue);
+    margin-right: 10px;
+}
+
+.btn2:hover{
+    border: solid var(--Very-Dark-Blue) 2px;
+    background-color: white;
+}
+
+.section1 .derecha{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.section1 .derecha .caja-azul{
+    background: var(--Soft-Blue);
+    width: 400px;
+    height: 300px;
+    border-radius: 68px 0px 0px 90px;
+    position: absolute;
+    right: 0;
+}
+
+.section1 .derecha .img{
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 320px;
+    background-size: contain;
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    top: 180px;
+}
