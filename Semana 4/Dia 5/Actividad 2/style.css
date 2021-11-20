@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow: #fbf35e;
+    --background: #e8e7e0;
+    --fontColor: #30312f;
+}
+
+body{
+    background-color: var(--background);
+}
+
+nav {
+    background-color: var(--yellow);
+    font-size: 0.8rem;
+    height: 80px;
+    width: 100vw;
+    line-height: 40px;
+    position: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    list-style: none;
+    background-color: var(--yellow);
+}
+
+
+.logo{
+    height: 45px;
+    width: 177px;
+    background-image: url(img/logo__large_plus.png);
+    background-size: cover;
+}
+
+.logo2{
+    height: 33px;
+    width: 310px;
+    background-image: url(img/disney.webp);
+    background-size: cover;
+}
+
+ul{
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+    padding:0px 12px;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    width:180px;
+    background-color: var(--fontColor);
+    color: var(--background);
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+li a {
+    text-decoration:none;
+    color: var(--fontColor);
+}
+
+li input{
+    height: 35px;
+    width: 500px;
+    border: none;
+}
+
+
+li input::placeholder {
+    padding-left: 10px;
+    color: #e8e7e0;
+}
+
+
+.slideshow-container {
+    padding: 105px 0px 0px 0px;
+}
+
+.slideshow-container img{
+    width:100%;
+    height: 350px;
+}
+
+.slideshow-container .prev {
+    left: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    padding: 16px;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+  
+.slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    padding: 16px;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    right: 0;
+}
+
+.payment-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    margin: 40px 0px 0px 140px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.card-body img{
+    float: left;
+}
+
+.card-body .info{
+    float: right;
+}
+
+.card-body .info a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.more img{
+    margin: 0px 30px 0px 0px;
+}
