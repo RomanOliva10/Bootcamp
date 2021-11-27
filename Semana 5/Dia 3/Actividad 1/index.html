@@ -9,18 +9,33 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <div class="container">
             <ul class="nav">
                 <li><div class="logo"></div></li>
             </ul>
             <ul class="nav">
-                <li><button class="fas fa-bars"> MENU</button></li>
+                <li><i id="hamburger" class="fas fa-bars"></i><button id="button" onclick="showMenu()">MENU</button></li>
             </ul>
+        </div>
+        <div id="menu" class="menu">
+            <div class="menu-links">
+                <a href="">ABOUT</a>
+                <a href="">THESIS</a>
+                <a href="">COMPANIES</a>
+                <a href="">TEAM</a>
+                <a href="">VALUES</a>
+                <a href="">INSIGHTS</a>
+            </div>
+            <div class="social-media">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fas fa-bookmark"></i>
+            </div>
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <div class="title">
             <h1>Investing in happiness</h1>
             <p>Europe's consumer technology VC</p>
@@ -77,7 +92,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="col1">
             <div class="logo2"></div>
             <p>“It is only with the heart that one can see rightly; what is essential is invisible to the eye. ”</p>
@@ -86,8 +101,8 @@
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-linkedin-in"></i>
                     <i class="fas fa-bookmark"></i>
-                    <a href="">contact@heartcore.com</a>
                 </div>
+                <a href="">contact@heartcore.com</a>
             </div>
         </div>
 
