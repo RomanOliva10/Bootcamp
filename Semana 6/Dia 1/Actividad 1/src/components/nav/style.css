@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(0, 0, 255, 0.5);
+  font-size: 0.8rem;
+  height: 80px;
+  line-height: 60px;
+  position: relative;
+  border-bottom: solid purple;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 60px;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav > li {
+  float: left;
+  padding: 0px 12px;
+}
+
+li a {
+  text-decoration: none;
+  color: purple;
+}
