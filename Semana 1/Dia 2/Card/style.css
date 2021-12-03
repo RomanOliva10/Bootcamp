@@ -1,26 +1,22 @@
-img{
-    width:100%;
-}
-
 body{
     background: blue;
 }
 
-.card{
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .card{
     box-shadow: 0px 4px 8px;
     width: 300px;
     background: white;
     text-align: center;
-    margin: 10px;
     float: flex;
 }
 
-.container{
-    width: 100%;
-    max-width: 1200px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+.container .card img{
+    width:100%;
 }
