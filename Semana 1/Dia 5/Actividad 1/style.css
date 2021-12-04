@@ -1,51 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-
-.card{
-    width: 200px;
-    background-color:white;
-    position: relative;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.card-body{
+.cards-container{
     text-align: center;
-    height: 220px;
-    position: relative;
 }
 
-.photo{
-    width:100px;
-    height:100px;
-    border-radius:150px;
+.cards-container .card{
+    width: 15%;
+    background: white;
+    color: black;
+    height: 275px;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.cards-container .card .photo{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     background-image: url(img/Donald_Trump.jpg);
     background-size: cover;
     background-position: center;
-    transform:translate(50%, 20%);
-    
 }
 
-.info{
-    position: relative;
-    padding: 20px;
-    margin: 0 auto;
+.cards-container .card .info{
+    padding: 40px 0px 16px 0px;
 }
 
-
-.links{
+.cards-container .card .social-media{
+    background: blue;
     color: white;
-    height: 20px;
-    background-color: blue;
-    text-align:center;
-    padding: 10px;
-    position: relative;
+    padding: 3px 0px;
 }
 
-i{
-    margin-right: 10px;
-    margin-left: 10px;
+.cards-container .card .social-media .fab{
+    padding: 10px;
 }
