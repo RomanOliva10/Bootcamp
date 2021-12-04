@@ -1,65 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .container{
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.container .info{
+    float: right;
+    width: 48%;
+    margin-top: 40px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
 }
 
-img{
-    width: 300px;
-    height: 400px;
-}
-
-.info{
-    width: 300px;
-    height: 400px;
-    background-color: #ffff;
-}
-
-.info>*{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-h2{
-    font-size: 2.3rem;
-    margin-bottom: -7%;
-}
-
-h5{
-    font-size: 0.8rem;
+.container .info .title h5{
+    color: gray;
+    font-weight: normal;
     letter-spacing: 2px;
-    color: rgb(219, 216, 216);
 }
 
-p{
-    margin-top: 17%;
-    font-size: 1rem;
-    line-height: 25px;
-    color: grey;
+.container .info p{
+    font-size: 1.2rem;
+    width: 93%;
+    color: gray;
 }
 
-.price{
+.container .info .price{
+    font-size: 2.5rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 15%;
+    align-items: end;
+    gap: 25px;
 }
 
-a{
-    font-size: 2rem;
-}
-
-button{
-    width: 160px;
-    height: 40px;
-    border: none;
+.container .info .price button{
     border-radius: 50px;
+    margin-top: 25px;
     background: rgb(156, 235, 213);
-    font-size: 1rem;
-    color: #fff;
-    padding: 12px 40px;
+    color: white;
+    border: none;
+    padding: 16px 45px;
 }
