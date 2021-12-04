@@ -1,84 +1,81 @@
-.container{
-    display: flex;
-    flex-wrap: wrap ;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.card{
-    margin: auto;
-    height: 420px;
-    width: 300px;
-    border-radius: 10px;
+.cards-container{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cards-container .card{
+    width: 25%;
+    height: 550px;
     background: linear-gradient(138deg, rgba(105,175,245,1) 0%, rgba(158,109,231,1) 54%, rgba(237,10,211,1) 100%);
+    color: white;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    gap: 30px;
+    padding-top: 35px;
 }
 
-.icon{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 20px;
-    box-shadow: 0px 9px 22px -12px rgb(0 0 0);
+
+.cards-container .card .icon{
     background: linear-gradient(138deg, rgba(105,175,245,1) 0%, rgba(158,109,231,1) 54%, rgba(237,10,211,1) 100%);
+    box-shadow: 0px 9px 22px -12px rgb(0 0 0);
+    width: 85px;
+    height: 85px;
+    font-size: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h2{
-    font-weight: 100;
+.cards-container .card h2{
+    font-weight: normal;
 }
 
-.price{
-    margin-top: -80px;
-    margin-bottom: -65px;
-    font-size:3rem;
+.cards-container .card h4{
+    font-size: 4rem;
+    font-weight: normal;
 }
 
-.icon .fas{
-    font-size:3rem;
-    position: relative;
-    top: 17px;
-    left: 14px;
+.cards-container .card .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-.info ul{
-    margin: 0;
-    padding: 0;
-}
-
-
-.info li{
-    list-style-type: none;
-    margin: 10px;
-    text-align: center;
-}
-
-button{
+.cards-container .card button{
     width: 85%;
-    height: 30px;
     border: none;
-    border-radius: 8px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-
-.card2{
-    background: linear-gradient(
-    -45deg, #ffec61, #f321d7);
+.cards-container .cardtwo{
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
 }
-
-.icon2{
+    
+.cards-container .cardtwo .icontwo{
     transform: rotate(-45deg);
-
-    background: linear-gradient(
-    -45deg, #ffec61, #f321d7);
+    background: linear-gradient(348deg, #ffec61, #f321d7);
 }
 
-.icon3{
-    background: linear-gradient(
-        120deg, #27fa77, #9456f9);
+.cards-container .cardthree{
+    background: linear-gradient(120deg, #27fa77, #9456f9);
 }
 
-.card3{
-    background: linear-gradient(
-        120deg, #27fa77, #9456f9);
+.cards-container .cardthree .iconthree{
+    background: linear-gradient(120deg, #27fa77, #9456f9);
 }
