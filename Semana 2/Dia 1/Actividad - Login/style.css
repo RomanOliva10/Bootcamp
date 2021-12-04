@@ -1,74 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
 html{
     font-family: 'Roboto Condensed';
 }
 
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
     background-image: linear-gradient(
       rgba(0, 2, 100, 0.7), 
       rgba(0, 2, 100, 0.7)
     ),
     url(img/737-2880x1920.jpg);
     background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container{
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    background-color: rgba(214, 214, 214, 0.5);
-    text-align: center;
-}
-
-.content{
-    padding-top: 50px;
-}
-
-h1{
+.container form{
+    width: 30%;
+    height: 70%;
+    background: rgba(128, 128, 128,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
     color: white;
 }
 
 
-input{
-    width: 300px;
-    height: 30px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100px;
-    border: hidden;
-    font-size: 1.3rem;
-    background-color: rgba(214, 214, 214, 0.5);
-
+.container form input{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    width: 80%;
+    background: rgba(128, 128, 128,0.5);
+    color: white;
 }
 
-input::placeholder{
-    color:white;
-    font-weight: bold;
+.container form input::placeholder{
+    color: white;
     padding-left: 10px;
-}
-
-button{
+    font-size: 1.1rem;
     font-weight: bold;
-
-    font-size: 1.3rem;
-    background-color: blue;
-    color: white;
-    width: 300px;
-    height: 30px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 100px;
-    border: hidden;
 }
 
-a{
-    color: white;
+.container form button{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    width: 80%;
+    background: royalblue;
     font-size: 1.3rem;
-    display: block;
-    padding-top: 20px;
-    text-decoration: none
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container form a{
+    color: white;
+    text-decoration: none;
 }
