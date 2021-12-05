@@ -12,7 +12,7 @@
     <nav>
         <div class="container">
             <ul class="nav">
-                <li><a class="hov" href=""><i class="fas fa-globe"></i> Idioma <span>▼</span></a></li>
+                <li><a href=""><i class="fas fa-globe"></i> Idioma <span>▼</span></a></li>
             </ul>
             <ul class="nav">
                 <li><div class="logo"></div></li>
@@ -21,80 +21,81 @@
                 <li><a class="btn" href="">Ir a nuestros tableros</a></li>
             </ul>
         </div>
-        <div class="container2">
-            <ul class="nav">
-                <li><a class="hov2" href="">PRODUCTO</a></li>
-                <li><a class="hov2" href="">EJEMPLOS DE USO</a></li>
-                <li><a class="hov2" href="">PRODUCTIVIDAD</a></li>
-                <li><a class="hov2" href="">TELETRABAJO</a></li>
-            </ul>
-            <ul class="nav">
-                <li><a class="hov" href=""><i class="fas fa-search"></i></a></li>
-            </ul>
+        <div class="sub-nav-container">
+            <div class="sub-nav-items">
+                <a href="">PRODUCTO</a>
+                <a href="">EJEMPLOS DE USO</a>
+                <a href="">PRODUCTIVIDAD</a>
+                <a href="">TELETRABAJO</a>
+            </div>
+            <div>
+                <a><i class="fas fa-search"></i></a>
+            </div>
         </div>
     </nav>
 
-    <main>
+    <div class="main-container">
         <div class="main">
             <img src="img/principal.webp" alt="">
-            <p class="des-main">PRODUCTIVIDAD | ENTERPRISE | LIDERAZGO - 7 MINUTOS DE LECTURA</p>
-            <h1>Cómo prevenir el agotamiento en tu equipo de trabajo</h1>
-            <p class="info">Reconocer y evitar que el agotamiento se apodere de los integrantes del equipo es fundamental para alcanzar las metas y los objetivos que se propongan.</p>
-            <div class="by">
+            <div class="info">
+                <p class="tags">PRODUCTIVIDAD | ENTERPRISE | LIDERAZGO - 7 MINUTOS DE LECTURA</p>
+                <h1>Cómo prevenir el agotamiento en tu equipo de trabajo</h1>
+                <p>Reconocer y evitar que el agotamiento se apodere de los integrantes del equipo es fundamental para alcanzar las metas y los objetivos que se propongan.</p>
                 <p>POR <span>KENZA MOLLER</span></p>
             </div>
         </div>
 
-        <article class="article">
+        <div class="articles-container">
             <h4>NUESTRA SELECCIÓN</h4>
-            <div class="section">
-                <p class="des">PRODUCTO - 4 MINUTOS DE LECTURA</p>
+            <div class="article">
+                <p>PRODUCTO - 4 MINUTOS DE LECTURA</p>
                 <h2>Unifica tus proyectos con la nueva vista de tabla de Trello</h2>
             </div>
-            <div class="section">
-                <p class="des">PRODUCTO - 5 MINUTOS DE LECTURA</p>
+            <div class="article">
+                <p>PRODUCTO - 5 MINUTOS DE LECTURA</p>
                 <h2>Una vista de cronograma para verlo todo, en Trello</h2>
             </div>
-            <div class="section">
-                <p class="des">PRODUCTO - 5 MINUTOS DE LECTURA</p>
+            <div class="article">
+                <p>PRODUCTO - 5 MINUTOS DE LECTURA</p>
                 <h2>No te compliques con los reportes: utiliza la vista de panel de Trello</h2>
             </div>
-            <div class="section">
-                <p class="des">PRODUCTO - 4 MINUTOS DE LECTURA</p>
+            <div class="article">
+                <p>PRODUCTO - 4 MINUTOS DE LECTURA</p>
                 <h2>Las nuevas tarjetas inteligentes de Trello: una nueva era de la interconectividad en el trabajo en equipo</h2>
             </div>
-        </article>
+        </div>
 
-        <section class="cards">
-            <h2 class="tittle">Publicaciones populares</h2>
-            <div class="articles">
-                <div class="card">
-                    <img src="img/card1.webp" alt="">
-                    <div class="info">
-                        <p class="des">PRODUCTIVIDAD | LIDERAZGO - 7 MINUTOS DE LECTURA</p>
-                        <h2>Mejora tus habilidades de liderazgo en el trabajo con la técnica Feynman</h2>
-                        <p>¿Quieres saber cómo ser un mejor líder en el trabajo? Te contamos qué es la técnica Feynman y cómo mejorar tus habilidades de liderazgo.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/card2.jpg" alt="">
-                    <div class="info">
-                        <p class="des">TRABAJO DE EQUIPO - 7 MINUTOS DE LECTURA</p>
-                        <h2>5 maneras de dar las gracias en el trabajo</h2>
-                        <p>Aprende a dar las gracias en el trabajo y fomenta una cultura de la gratitud en el trabajo que hará que todos aumenten su productividad.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/card3.webp" alt="">
-                    <div class="info">
-                        <p class="des">PRODUCTIVIDAD - 10 MINUTOS DE LECTURA</p>
-                        <h2>Cuáles son los 4 estilos de comunicación y cómo usarlos en tiempos difíciles</h2>
-                        <p>Aprende a identificar y a lidiar con distintos estilos de comunicación para mejorar el ambiente laboral y armonía al equipo de trabajo, remoto o en oficina.</p>
-                    </div>
+    </div>
+    <div class="cards-section">
+        <h2 class="title">Publicaciones populares</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/card1.webp" alt="">
+                <div class="info">
+                    <p class="tags">PRODUCTIVIDAD | LIDERAZGO - 7 MINUTOS DE LECTURA</p>
+                    <h2>Mejora tus habilidades de liderazgo en el trabajo con la técnica Feynman</h2>
+                    <p>¿Quieres saber cómo ser un mejor líder en el trabajo? Te contamos qué es la técnica Feynman y cómo mejorar tus habilidades de liderazgo.</p>
                 </div>
             </div>
-        </section>
-    </main>
-    <script src="main.js"></script>
+
+            <div class="card">
+                <img src="img/card2.webp" alt="">
+                <div class="info">
+                    <p class="tags">TRABAJO DE EQUIPO - 7 MINUTOS DE LECTURA</p>
+                    <h2>5 maneras de dar las gracias en el trabajo</h2>
+                    <p>Aprende a dar las gracias en el trabajo y fomenta una cultura de la gratitud en el trabajo que hará que todos aumenten su productividad.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/card3.webp" alt="">
+                <div class="info">
+                    <p class="tags">PRODUCTIVIDAD - 10 MINUTOS DE LECTURA</p>
+                    <h2>Cuáles son los 4 estilos de comunicación y cómo usarlos en tiempos difíciles</h2>
+                    <p>Aprende a identificar y a lidiar con distintos estilos de comunicación para mejorar el ambiente laboral y armonía al equipo de trabajo, remoto o en oficina.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
